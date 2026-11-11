@@ -9,9 +9,9 @@ The `.out-of-scope/` directory in a repo stores persistent records of rejected f
 
 ```
 .out-of-scope/
-├── dark-mode.md
-├── plugin-system.md
-└── graphql-api.md
+├── dark-mode.org
+├── plugin-system.org
+└── graphql-api.org
 ```
 
 One file per **concept**, not per issue. Multiple issues requesting the same thing are grouped under one file.
@@ -20,12 +20,12 @@ One file per **concept**, not per issue. Multiple issues requesting the same thi
 
 The file should be written in a relaxed, readable style, more like a short design document than a database entry. Use paragraphs, code samples, and examples to make the reasoning clear and useful to someone encountering it for the first time.
 
-```markdown
-# Dark Mode
+```org
+* Dark Mode
 
 This project does not support dark mode or user-facing theming.
 
-## Why this is out of scope
+** Why this is out of scope
 
 The rendering pipeline assumes a single color palette defined in
 `ThemeConfig`. Supporting multiple themes would require:
@@ -46,7 +46,7 @@ interface ThemeConfig {
 }
 ```
 
-## Prior requests
+** Prior requests
 
 - #42: "Add dark mode support"
 - #87: "Night theme for accessibility"
@@ -55,7 +55,7 @@ interface ThemeConfig {
 
 ### Naming the file
 
-Use a short, descriptive kebab-case name for the concept: `dark-mode.md`, `plugin-system.md`, `graphql-api.md`. The name should be recognizable enough that someone browsing the directory understands what was rejected without opening the file.
+Use a short, descriptive kebab-case name for the concept: `dark-mode.org`, `plugin-system.org`, `graphql-api.org`. The name should be recognizable enough that someone browsing the directory understands what was rejected without opening the file.
 
 ### Writing the reason
 
@@ -72,8 +72,8 @@ The reason should be durable. Avoid referencing temporary circumstances ("we're 
 During triage (Step 1: Gather context), read all files in `.out-of-scope/`. When evaluating a new issue:
 
 - Check if the request matches an existing out-of-scope concept
-- Matching is by concept similarity, not keyword: "night theme" matches `dark-mode.md`
-- If there's a match, surface it to the maintainer: "This is similar to `.out-of-scope/dark-mode.md`. We rejected this before because [reason]. Do you still feel the same way?"
+- Matching is by concept similarity, not keyword: "night theme" matches `dark-mode.org`
+- If there's a match, surface it to the maintainer: "This is similar to `.out-of-scope/dark-mode.org`. We rejected this before because [reason]. Do you still feel the same way?"
 
 The maintainer may:
 

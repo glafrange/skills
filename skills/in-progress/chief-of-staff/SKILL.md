@@ -59,7 +59,7 @@ As part of any and all work, FIRST consider how the environment the agents opera
 
 - API's and functions which are extremely constrained and limited
 - Lint rules which force correctness
-- CODING_STANDARDS.md files which let code reviewers enforce best practices
+- CODING_STANDARDS.org files which let code reviewers enforce best practices
 
 They also need relevant **data sources** to succeed:
 

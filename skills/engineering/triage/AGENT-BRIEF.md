@@ -119,16 +119,16 @@ Future similar requests require the maintainer to recall or search for the
 prior discussion.
 
 **Desired behavior:**
-Rejected feature requests should be documented in `.out-of-scope/<concept>.md`
+Rejected feature requests should be documented in `.out-of-scope/<concept>.org`
 files that capture the decision, reasoning, and links to all issues that
 requested the feature. When triaging new issues, these files should be
 checked for matches.
 
 **Key interfaces:**
-- Markdown file format in `.out-of-scope/`: each file should have a
-  `# Concept Name` heading, a `**Decision:**` line, a `**Reason:**` line,
-  and a `**Prior requests:**` list with issue links
-- The triage workflow should read all `.out-of-scope/*.md` files early
+- Org file format in `.out-of-scope/`: each file should have a
+  `* Concept Name` heading, a `*Decision:*` line, a `*Reason:*` line,
+  and a `*Prior requests:*` list with issue links
+- The triage workflow should read all `.out-of-scope/*.org` files early
   and match incoming issues against them by concept similarity
 
 **Acceptance criteria:**

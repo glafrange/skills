@@ -13,3 +13,5 @@ The skills speak in terms of five canonical triage roles. This file maps those r
 When a skill mentions a role (e.g. "apply the AFK-ready triage label"), use the corresponding label string from this table.
 
 Edit the "Label in our tracker" column to match whatever vocabulary you actually use.
+
+In the local Org-file tracker there are no tracker labels: record the role string in the ticket's `#+STATUS:` keyword instead.
